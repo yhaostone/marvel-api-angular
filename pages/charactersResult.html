@@ -1,0 +1,27 @@
+<p>
+    <a href="#/characters" class="btn btn-primary">Back to Search</a>
+</p>
+Characters whose name starts with '{{character}}':
+
+<span style="float:right">
+    Result Limit: <a href="#/charactersResult/3/{{order}}" ng-class="{'bg-primary': limit === '3'}">3</a> | 
+    <a href="#/charactersResult/5/{{order}}" ng-class="{'bg-primary': limit === '5'}">5</a> | 
+    <a href="#/charactersResult/10/{{order}}" ng-class="{'bg-primary': limit === '10'}">10</a> |
+    <a href="#/charactersResult/20/{{order}}" ng-class="{'bg-primary': limit === '20'}">20</a>
+</span>
+<br>
+
+<span style="float:right">
+    Ordered by:&nbsp;<a href="#/charactersResult/{{limit}}/name" ng-class="{'bg-primary': order === 'name'}">Name</a> | 
+    <a href="#/charactersResult/{{limit}}/-modified" ng-class="{'bg-primary': order === '-modified'}">Modified</a>
+</span>
+
+<hr/>{{errorMsg}}
+
+<div ng-repeat="c in characters.characters">
+    <div class="row">
+        <div class="col-md-12">
+            <character-record character-item="c" popup="popup(char)"></character-record>
+        </div>
+    </div>
+</div>

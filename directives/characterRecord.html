@@ -1,0 +1,20 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <a href="{{characterItem.urls[0].url}}" target='_blank'>{{ characterItem.name }}</a>
+        
+        <span style="float:right">Modified: {{ characterItem.modified }}</span>
+    </div>
+    
+    <div class="panel-body">
+        
+        <img ng-click="popup({char:characterItem})" class="pull-left"  ng-src="{{ characterItem.thumbnail.path }}/standard_fantastic.{{ characterItem.thumbnail.extension }}" style="margin-right: 10px">
+        
+        
+        ID: {{ characterItem.id }}
+        <br>
+        
+        {{ characterItem.description || 'No description provided.' }}<br>
+        
+        <a href="{{characterItem.urls[0].url}}" target='_blank'>More Info</a>
+    </div>
+</div>

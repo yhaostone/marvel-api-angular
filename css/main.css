@@ -1,0 +1,77 @@
+body{
+  font-family: 'Open Sans', Arial, Tahoma;
+  font-weight: 400;
+  font-size: 1em;
+  color: #363636;
+  background: #ededed;
+}
+
+html, body, input, select, textarea
+{
+    font-size: 1.05em;
+}
+
+html{
+    position:relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 50px;    // leave space for footer
+}
+
+.container { 
+    height: 100%;
+}
+
+.footer {
+    position: absolute;
+    padding: 15px 0px 10px 0px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 0.8;
+    color: #fff;
+    background-color: #222;
+    border-color: #080808;    
+    bottom: 0;
+}
+
+.container{
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+/* welcome page video */
+    #video-background {
+    /*  making the video fullscreen  */
+        position: fixed;
+        right: 0; 
+        bottom: 0;
+        min-width: 100%; 
+        min-height: 100%;
+        width: auto; 
+        height: auto;
+        z-index: -100;
+    }
+
+    /* These style the content */
+    article {
+    /*  just a fancy border  */
+      position: absolute;
+      top: 50px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 10px;
+    }
+
+    h1 {
+        position: absolute;
+        top: 60%;
+        width: 100%;
+        font-size: 36px;
+        letter-spacing: 3px;
+        color: #fff;
+        font-family: Oswald, sans-serif;
+        text-align: center;
+    }
