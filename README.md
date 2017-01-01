@@ -1,4 +1,4 @@
-# marvel-characters
+# marvel-api-angular
 This is a single page application developed using AngularJS and Marvel API (http://developer.marvel.com). 
 This application targets on Marvel fans and it currently focuses on 'Characters'.
 
